@@ -1,6 +1,6 @@
 {
   "firebase": "zensync",
-  "public": ".",
+  "public": "./web-app",
   "ignore": [
     "firebase.json",
     "**/.*",

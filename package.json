@@ -1,5 +1,6 @@
 {
   "name": "Zen Sync",
+  
   "version": "1.0.0",
   "description": "Simple smart strap",
   "engines":{
