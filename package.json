@@ -1,7 +1,7 @@
 {
-  "name": "AngularFirebaseLogin",
+  "name": "Zen Sync",
   "version": "1.0.0",
-  "description": "Sample app connecting AngularJS and Firebase together",
+  "description": "Simple smart strap",
   "engines":{
     "node": "0.6.x",
     "npm": "1.0.x"

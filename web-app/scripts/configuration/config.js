@@ -1,3 +1,3 @@
 firebase = {
-    url : "boiling-fire-2567"//change this with your own
+    url : "zensync"//change this with your own
 };
