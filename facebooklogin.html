@@ -1,0 +1,32 @@
+<div class="container-fixed">
+	<div class="hero-unit">
+		<p ng-hide="auth.user">Please sign in with Facebook</p>
+
+        <!-- facebook button -->
+        <button ng-hide="auth.user" class="btn btn-facebook" ng-click ="login('facebook')">
+            <i class="fa fa-facebook"</i> | Connect with Facebook</button>
+        <img src="./icons/1024x1024.png">
+	<div>
+
+
+        <a ng-show="auth.user" href="#/chat" >Chat With Family</a>
+
+<script type="text/javascript">
+//firebase login with facebook
+    //var ref = new Firebase('https://boiling-fire-2567.firebaseio.com');
+    $rootScope.auth = loginService.getAuth();
+
+    $scope.logout = function(){
+        $rootScope.auth.$logout();
+        $rootScope.auth.user = null;
+        $location.path('/login'); //change path
+    };
+
+    $scope.login = function(provider){
+        $rootScope.auth.$login(provider);
+
+    }
+
+});
+</script>
+</div>
